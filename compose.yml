@@ -1,0 +1,14 @@
+version: "3"
+services:
+  front:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./my-app:/app
+    restart: always
+    tty: true
+    stdin_open: true
+    command: yarn dev
+volumes:
+  node_modules:
