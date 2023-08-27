@@ -1,5 +1,5 @@
 # Environment
-Docker x Next.js x Typescript x TailwindCSS
+Docker x Next.js x Typescript x TailwindCSS x Supabase x Prisma
 # How to use
 1. Clone this repository and prepare docker.
 2. Type this command `docker-compose up`.
