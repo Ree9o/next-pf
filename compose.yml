@@ -1,14 +1,18 @@
 version: "3"
 services:
   front:
+    container_name: "next-myapp"
     build: .
     ports:
       - "3000:3000"
     volumes:
       - ./my-app:/app
     restart: always
+    environment:
+     - WATCHPACK_POLLING=true #hot reload
     tty: true
     stdin_open: true
     command: yarn dev
+    
 volumes:
   node_modules:
